@@ -10,7 +10,7 @@ updates:
     target-branch: dev
     schedule: { interval: weekly, day: monday, time: "06:00", timezone: Europe/Paris }
     open-pull-requests-limit: 3
-    commit-message: { prefix: "deps(outils)" }
+    commit-message: { prefix: "chore(deps-outils)" }
     labels: [dépendances]
     groups:
       outils-mineures:
@@ -21,7 +21,7 @@ updates:
     target-branch: dev
     schedule: { interval: weekly, day: monday, time: "06:00", timezone: Europe/Paris }
     open-pull-requests-limit: 5
-    commit-message: { prefix: "deps(api)" }
+    commit-message: { prefix: "chore(deps-api)" }
     labels: [dépendances]
     groups:
       # Les mises à jour mineures et correctives sont regroupées en une seule PR
@@ -33,7 +33,7 @@ updates:
     target-branch: dev
     schedule: { interval: weekly, day: monday, time: "06:00", timezone: Europe/Paris }
     open-pull-requests-limit: 5
-    commit-message: { prefix: "deps(web)" }
+    commit-message: { prefix: "chore(deps-web)" }
     labels: [dépendances]
     groups:
       web-mineures:
@@ -44,7 +44,7 @@ updates:
     target-branch: dev
     schedule: { interval: weekly, day: monday, time: "06:00", timezone: Europe/Paris }
     open-pull-requests-limit: 3
-    commit-message: { prefix: "deps(e2e)" }
+    commit-message: { prefix: "chore(deps-e2e)" }
     labels: [dépendances]
     groups:
       e2e-toutes:
@@ -55,7 +55,7 @@ updates:
     directories: [/api, /web]
     target-branch: dev
     schedule: { interval: weekly, day: monday, time: "06:00", timezone: Europe/Paris }
-    commit-message: { prefix: "deps(docker)" }
+    commit-message: { prefix: "chore(deps-docker)" }
     labels: [dépendances]
 
   # Images des fichiers compose (postgres, caddy)
@@ -63,14 +63,14 @@ updates:
     directory: /
     target-branch: dev
     schedule: { interval: weekly, day: monday, time: "06:00", timezone: Europe/Paris }
-    commit-message: { prefix: "deps(compose)" }
+    commit-message: { prefix: "chore(deps-compose)" }
     labels: [dépendances]
 
   - package-ecosystem: github-actions
     directory: /
     target-branch: dev
     schedule: { interval: monthly }
-    commit-message: { prefix: "deps(ci)" }
+    commit-message: { prefix: "chore(deps-ci)" }
     labels: [dépendances]
     groups:
       actions:
